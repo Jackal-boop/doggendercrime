@@ -1,13 +1,15 @@
 body {
     background-color: #2b2d3a;
 }
-#main {
+
+#title {
     font-family: "FlexiIBMVGATrue";
     color: #a176be;
-    width:600px;
     margin:auto;
     text-align: center;
-    padding: 50px;
+    padding: 3px;
+    white-space: nowrap;
+    overflow: hidden;
     }
 
 .active{
@@ -18,25 +20,31 @@ body {
 
 .link-holder {
     font-family: "FlexiIBMVGATrue";
-    font-size: 23px;
-    color: #a176be;
+    font-size: 32px;
+    color: #5fd88d !important;
     margin:auto;
     text-align: center;
     padding: 50px;
+
 }
 
-.links:link {
-    color : #a176be;
+.links {
+    color : #5fd88d !important;
+    text-decoration: none;
 }
 .links:hover {
     color: #ed1548;
+    text-decoration: underline;
 }
 
 @font-face {
     font-family: "FlexiIBMVGATrue";
     src: url("Flexi_IBM_VGA_True.ttf");
 }
-
+@font-face {
+    font-family: "HackNerdFont-Regular";
+    src: url("HackNerdFont-Regular.ttf");
+}
 .flicker {
     opacity: 0%;
     margin: 25px;
@@ -95,12 +103,12 @@ body {
 
     50% {
         height: 0px;
-        width: 400px;
+        width: 215px;
     }
 
     100% {
-        height: 600px;
-        width: 400px;
+        height: 35px;
+        width: 215px;
     }
 }
 
@@ -122,4 +130,20 @@ body {
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+#photographyTitle {
+    font-family: "HackNerdFont-Regular";
+    font-size: 32;
+    color: #5fd88d;
+    text-align: center;
+}
+
+
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
