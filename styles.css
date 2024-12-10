@@ -112,14 +112,6 @@ body {
     }
 }
 
-.flicker {
-    opacity: 0%;
-    margin: 25px;
-    animation-name: flicker;
-    animation-fill-mode: forwards;
-    animation-duration: 0.2s;
-}
-
 .box {
     width: 0%;
     height: 0%;
@@ -146,4 +138,44 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.imgContainer {
+    margin: auto;
+    padding: 12px;
+    
+}
+
+.gallery {
+    margin:inherit;
+    border-image: linear-gradient(to right,#a8fbb9 0%, #4a0979 100%) 1;
+    border-width: 7px;
+    border-style: solid;
+    width: 640px;
+    height: 427px;
+    
+}
+.galleryRight{
+
+}
+.gallerySpread {
+    animation-name: gallerySpread;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes gallerySpread {
+    0% {
+        height: 15px;
+        width: 15px;
+    }
+    50% {
+        height: 200px;
+        width: 400px;
+    }
+    100% {
+        height: 427px;
+        width: 640px;
+    }
 }
